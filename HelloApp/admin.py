@@ -1,7 +1,7 @@
 # Register your models here.
 from django.contrib import admin
 
-from HelloApp.models import Question, Choice
+from HelloApp.models import Question, Choice, UserProfile
 
 
 class ChoiceInline(admin.TabularInline):
@@ -16,5 +16,10 @@ class QuestionAdmin(admin.ModelAdmin):
         ]
     inlines = [ChoiceInline]
 
+
+admin.site.site_header = 'OLOHeader'
+admin.site.site_title = 'OLOTitle'
+
 admin.site.register(Question, QuestionAdmin)
 admin.site.register(Choice)
+admin.site.register(UserProfile)

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+{% if user.is_authenticated %}
+    <h1>Rango says... hello {{ user.username }}!</h1>
+{% else %}
+    <h1>Rango says... hello world!</h1>
+{% endif %}
+<br>{{ param1 }}
+<br>{{ param2 }}
+<br><a href="{% url 'register' %}">Register Here</a>
+{% if not user.is_authenticated %}
+    <br><a href="{% url 'login' %}">Or just log in</a>
+{% else %}
+    <br><a href="{% url 'logout' %}">Go away!</a>
+{% endif %}
+
+
+</body>
+</html>

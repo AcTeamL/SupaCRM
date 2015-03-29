@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2709854464">
+  <component name="DataSourceManagerImpl" format="xml" hash="1415176023">
     <data-source source="LOCAL" name="db" uuid="5b45a133-9459-40dd-94d7-5a1762780bcd">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
@@ -19,7 +19,7 @@
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:D:\IDE\Python\IDEAProjects\SupaCRM\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:D:\IDE\IDEAProjects\HelloProject\db.sqlite3</jdbc-url>
       <libraries>
         <library>
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/xerial-sqlite-license.txt</url>
